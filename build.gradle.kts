@@ -15,11 +15,10 @@ repositories {
 
 dependencies {
   implementation("org.jetbrains.kotlin:kotlin-stdlib")
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0")
 
+  testImplementation("org.junit.jupiter:junit-jupiter:5.7.2")
   testImplementation("org.assertj:assertj-core:3.19.0")
-  testImplementation(kotlin("test-junit5"))
-  testImplementation("org.junit.jupiter:junit-jupiter-api:5.7.2")
-  testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.7.2")
 }
 
 ktlint {
